@@ -10,7 +10,7 @@ const Parent = () => {
 
       //This way of definig components can receive children as props
 
-      <ChildAsFC color="red" onClick={() => console.log('AsFC')}>
+      <ChildAsFC color="red" onClickP={() => console.log('AsFC')}>
         this is the children string
       </ChildAsFC>
     </>
@@ -18,3 +18,8 @@ const Parent = () => {
 }
 
 export default Parent
+
+/**
+ * so in the parent componenet the CHild component HTML attributes are the props taken in as argument in the child tsx file
+ * 
+ */

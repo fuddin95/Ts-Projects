@@ -18,17 +18,17 @@ export const Child = ({color,onClick}:ChildProps) => {
 
 interface ChildPropAsFC{
     color: string;
-    onClick: () => void;
+    onClickP: () => void;
 }
 //building a proper typyscirpt component
 // NOTE: here the prop interface is passed in generics
 //children can be accessed
 
-export const ChildAsFC: React.FC<ChildPropAsFC> = ({color,onClick,children}) =>{
+export const ChildAsFC: React.FC<ChildPropAsFC> = ({color,onClickP,children}) =>{
     return(
         <div>
             Proper child react functional component Color: {color}
-            <button onClick={onClick}>Click ME</button>
+            <button onClick={onClickP}>Click ME</button>
             {children}
         </div>
     )

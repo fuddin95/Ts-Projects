@@ -11,8 +11,8 @@ export const GuestList: React.FC = () => {
   }
   return (
     <div>
-      <h3>This is the Guest List</h3>
-      <div><li>{guests}</li></div>
+      <h2>This is the Guest List</h2>
+      <div><ul>{guests.map((guest)=>{return<li>{guest}</li>})}</ul></div>
       
       <input value={name} onChange={e => setName(e.target.value)}/>
       <button onClick={onClick}> Add Guest</button>

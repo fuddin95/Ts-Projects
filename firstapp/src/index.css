@@ -1,0 +1,18 @@
+div{
+    margin:1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border: darkgray;
+    border-color: darkkhaki;
+}
+body{
+    background-color: bisque;
+}
+h1{
+    color: brown;
+}
+
+h2{
+    color:crimson
+}
+
